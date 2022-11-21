@@ -69,16 +69,11 @@ plsda.cv<-function(formula,data,nfold=10){
 
 
     }
-    #PRESS[j] <-as.numeric(sum(press))
     R2_scores[j] <-as.numeric()
   }
 
-  #ncomp <- which.min(PRESS)
-  #min.PRESS <- PRESS[ncomp]
   max.R2_scores <- R2_scores[ncomp]
-  #object=list("ncomp" = ncomp,
-   #           "PRESS" = PRESS,
-    #          "min.PRESS" = min.PRESS)
+
 
   object=list("ncomp" = ncomp,
               "R2_scores" = R2_scores,
